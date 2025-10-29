@@ -1,0 +1,23 @@
+{
+  "name": "annab-pro",
+  "version": "1.0.0",
+  "description": "for js homeworks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilyann/AnnaB-Pro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilyann/AnnaB-Pro/issues"
+  },
+  "homepage": "https://github.com/bilyann/AnnaB-Pro#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
