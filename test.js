@@ -8,8 +8,8 @@ function pow(x, y) {
     }
     return result;
 }
-console.log("Приводимо число Y у ступінь X і показуємо результати обчислень")
-let x = Number(prompt("Введіть число у: "));
-let y = Number(prompt("Введіть число x: "));
+console.log("Приводимо число X у ступінь Y і показуємо результати обчислень")
+let x = Number(prompt("Введіть число X: "));
+let y = Number(prompt("Введіть число Y: "));
 
 console.log("Результат: " + pow(x, y));
