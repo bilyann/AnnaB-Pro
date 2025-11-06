@@ -19,5 +19,6 @@
   "homepage": "https://github.com/bilyann/AnnaB-Pro#readme",
   "dependencies": {
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "type": "commonjs"
 }
