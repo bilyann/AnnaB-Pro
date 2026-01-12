@@ -1,0 +1,247 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1768253854019,3,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,3,0,0
+1768253854022,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253854024,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253854025,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253854027,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253854028,4,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253857023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253857027,3,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,3,0,0
+1768253857031,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,2,0,0
+1768253857033,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253857035,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253857038,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253860023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253860028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253860030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253860032,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253860033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253860035,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253863023,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253863028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253863030,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,2,0,0
+1768253863032,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253863033,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253863035,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253866022,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253866027,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,271,214,1,1,http://localhost:3001/character,2,0,0
+1768253866030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,266,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253866031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253866032,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253866034,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253869021,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253869025,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253869027,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253869029,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253869030,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253869033,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253872020,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253872025,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253872027,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,2,0,0
+1768253872029,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253872031,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253872032,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253875023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253875027,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253875030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253875031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253875032,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253875033,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253878023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253878028,1,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,1,0,0
+1768253878030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253878031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253878033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253878034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253881023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253881028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253881030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253881031,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253881033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253881034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253884022,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,2
+1768253884028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253884030,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,2,0,0
+1768253884032,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253884033,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253884035,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253887020,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253887025,1,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,1,0,0
+1768253887027,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253887028,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253887029,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253887031,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253890021,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253890026,1,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,1,0,0
+1768253890028,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253890029,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253890031,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253890032,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253893023,3,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,3,0,0
+1768253893026,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253893028,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253893030,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253893031,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253893032,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253896022,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253896027,3,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,3,0,0
+1768253896030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253896032,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253896033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253896034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253899019,9,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,9,0,1
+1768253899028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253899030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253899032,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253899033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253899034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253902023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253902028,1,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,1,0,0
+1768253902030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253902031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253902032,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253902034,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253905023,7,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,7,0,0
+1768253905031,1,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,1,0,0
+1768253905033,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253905034,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253905036,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253905037,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253908022,6,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,6,0,1
+1768253908028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253908030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253908031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253908032,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253908033,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253911021,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253911025,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253911028,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253911029,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253911031,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253911032,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253914023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253914027,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253914029,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253914030,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253914032,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253914033,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253917023,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253917028,3,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,3,0,0
+1768253917032,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253917033,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253917035,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253917036,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253920022,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,0
+1768253920027,3,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,3,0,0
+1768253920031,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253920033,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253920035,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253920038,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253923022,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253923027,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253923030,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253923032,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253923034,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253923035,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253926022,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253926027,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253926030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253926031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253926033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253926034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253929023,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,0
+1768253929028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253929030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253929032,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253929033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253929034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253932023,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,0
+1768253932028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253932030,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,2,0,0
+1768253932032,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253932033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253932034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253935023,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,0
+1768253935028,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253935030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253935031,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253935033,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253935034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253938023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253938027,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253938029,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253938031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253938032,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253938034,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253941021,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253941025,3,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,271,214,1,1,http://localhost:3001/character,2,0,0
+1768253941028,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,266,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253941029,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253941031,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253941032,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253944019,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253944024,3,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,3,0,0
+1768253944027,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,2,0,0
+1768253944029,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253944031,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253944033,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253947022,3,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,3,0,0
+1768253947025,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,271,214,1,1,http://localhost:3001/character,2,0,0
+1768253947027,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,266,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253947028,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253947029,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253947031,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253950022,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253950026,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253950028,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,2,0,0
+1768253950030,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253950032,2,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,2,0,0
+1768253950034,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253953019,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253953023,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253953026,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253953027,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253953028,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253953029,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253956019,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253956024,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253956026,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253956028,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253956029,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253956030,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253959023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253959028,1,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,1,0,0
+1768253959030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253959031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253959032,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253959033,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253962023,5,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,5,0,1
+1768253962028,3,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,3,0,0
+1768253962031,2,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,2,0,0
+1768253962033,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253962035,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253962037,0,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253965021,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253965026,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253965029,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253965031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253965032,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253965033,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253968023,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,0
+1768253968027,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253968030,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253968031,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253968032,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253968033,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253971021,3,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,3,0,0
+1768253971025,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253971027,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253971028,1,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,1,0,0
+1768253971029,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253971030,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
+1768253974021,4,HTTP Request - GET All Characters,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,340,158,1,1,http://localhost:3001/characters,4,0,1
+1768253974026,2,HTTP Request - POST Create Character,201,Created,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,272,215,1,1,http://localhost:3001/character,2,0,0
+1768253974028,1,HTTP Request - GET Character by ID,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,267,159,1,1,http://localhost:3001/character/4,1,0,0
+1768253974030,2,HTTP Request - PUT Update Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,275,228,1,1,http://localhost:3001/character/4,2,0,0
+1768253974032,1,HTTP Request - DELETE Character,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,293,181,1,1,http://localhost:3001/character/4,1,0,0
+1768253974033,1,JSR223 Sampler,200,OK,bzm - Arrivals Thread Group-ThreadStarter 1-1,text,true,,0,0,1,1,null,0,0,0
