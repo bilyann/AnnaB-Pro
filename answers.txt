@@ -1,0 +1,144 @@
+// ==========================================
+// ДОМАШНЄ ЗАВДАННЯ: MongoDB (homework24)
+// ==========================================
+
+// 1. Знайти користувачів у яких в імені є послідовність букв qw
+db.Users.find({ firstName: { $regex: /qw/i } });
+
+// 2. Знайти користувачів у яких country дорівнює Ukraine
+// Примітка: Дані про країну знаходяться у колекції UserProfile
+db.UserProfile.find({ country: "Ukraine" });
+
+// 3. Знайти користувачів у яких в профайлі поле country не має значення
+db.UserProfile.find({ country: { $exists: false } });
+
+// 4. Знайти користувачів у яких в профайлі поле name не починається з літери a (використовуючи $where)
+// Оскільки в нашій структурі ім'я зберігається в Users як firstName:
+db.Users.find({ 
+  $where: function() { 
+    return !(/^a/i.test(this.firstName)); 
+  } 
+});
+
+// 5 & 6. Робота з $lookup та створення колекції Cars (car)
+// Колекція Cars (car) була реалізована з наступною схемою валідації:
+{
+  "_id": ObjectId("6789abcdef1234567890abcd"),
+  "userId": ObjectId("507f1f77bcf86cd799439011"),     // Посилання на Users
+  "carBrandId": ObjectId("507f191e810c19729de860ea"), // Посилання на CarBrands
+  "carModelId": ObjectId("507f191e810c19729de860eb"), // Посилання на CarsModels
+  "mileage": 15000
+}
+// - userId (ObjectId): посилання на Users
+db.Cars.aggregate([
+  {
+    $lookup: {
+      from: "Users",
+      localField: "userId",
+      foreignField: "_id",
+      as: "owner"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      mileage: 1,
+      owner_name: { $arrayElemAt: ["$owner.firstName", 0] } // Витягуємо ім'я з масиву
+    }
+  }
+])
+// - carBrandId (ObjectId): посилання на CarBrands
+db.Cars.aggregate([
+  {
+    $lookup: {
+      from: "CarBrands",       // З якою колекцією єднаємо
+      localField: "carBrandId",// Поле в Cars, де лежить ID
+      foreignField: "_id",     // Поле в CarBrands, яке ми шукаємо
+      as: "brand_info"         // Назва нового масиву з результатом
+    }
+  }
+])
+// - carModelId (ObjectId): посилання на CarsModels
+{
+  "_id": ObjectId("60d5f1f7bcf86cd799439011"), // Це ID моделі
+  "title": "TT",
+  "carBrandId": ObjectId("60d5f1f7bcf86cd79943900a") // Посилання на бренд Audi
+}
+{
+  "_id": ObjectId("6789abcdef1234567890abcd"),
+  "mileage": 150,
+  "carModelId": ObjectId("60d5f1f7bcf86cd799439011"), // ОСЬ ЦЕ ПОСИЛАННЯ
+  "userId": ObjectId("..."),
+  "carBrandId": ObjectId("...")
+}
+// - mileage (Number): пробіг автомобіля
+{
+  "_id": ObjectId("6789abcdef1234567890abcd"),
+  "mileage": 45000,           // Числове значення пробігу
+  "userId": ObjectId("..."),
+  "carBrandId": ObjectId("...")
+}
+// Це дозволяє використовувати $lookup для об'єднання даних з різних колекцій.
+
+// 7. Додайте 10 автівок
+// Отримуємо ID існуючих записів для створення зв'язків
+const userObj = db.Users.findOne();
+const audiBrand = db.CarBrands.findOne({ title: "Audi" });
+const bmwBrand = db.CarBrands.findOne({ title: "BMW" });
+const audiModel = db.CarsModels.findOne({ carBrandId: audiBrand._id });
+const bmwModel = db.CarsModels.findOne({ carBrandId: bmwBrand._id });
+
+db.Cars.insertMany([
+  { userId: userObj._id, carBrandId: audiBrand._id, carModelId: audiModel._id, mileage: 150 },
+  { userId: userObj._id, carBrandId: audiBrand._id, carModelId: audiModel._id, mileage: 500 },
+  { userId: userObj._id, carBrandId: audiBrand._id, carModelId: audiModel._id, mileage: 1000 },
+  { userId: userObj._id, carBrandId: audiBrand._id, carModelId: audiModel._id, mileage: 80 },
+  { userId: userObj._id, carBrandId: audiBrand._id, carModelId: audiModel._id, mileage: 250 },
+  { userId: userObj._id, carBrandId: bmwBrand._id, carModelId: bmwModel._id, mileage: 3000 },
+  { userId: userObj._id, carBrandId: bmwBrand._id, carModelId: bmwModel._id, mileage: 12000 },
+  { userId: userObj._id, carBrandId: bmwBrand._id, carModelId: bmwModel._id, mileage: 45000 },
+  { userId: userObj._id, carBrandId: bmwBrand._id, carModelId: bmwModel._id, mileage: 95 },
+  { userId: userObj._id, carBrandId: bmwBrand._id, carModelId: bmwModel._id, mileage: 700 }
+]);
+
+// 8. Напишіть запит який буде повертати інформацію по машинам та їх власників 
+// у яких mileage >= 100 и модель атомобіля Audi
+db.Cars.aggregate([
+  {
+    $match: { mileage: { $gte: 100 } }
+  },
+  {
+    $lookup: {
+      from: "Users",
+      localField: "userId",
+      foreignField: "_id",
+      as: "owner"
+    }
+  },
+  {
+    $lookup: {
+      from: "CarBrands",
+      localField: "carBrandId",
+      foreignField: "_id",
+      as: "brand"
+    }
+  },
+  {
+    $match: { "brand.title": "Audi" }
+  },
+  {
+    $project: {
+      _id: 0,
+      mileage: 1,
+      ownerName: { $arrayElemAt: ["$owner.firstName", 0] },
+      brandName: { $arrayElemAt: ["$brand.title", 0] }
+    }
+  }
+]);
+
+// 9. Знайти cars у яких бренд BMW або Audi
+const brandIds = db.CarBrands.find({ 
+  title: { $in: ["Audi", "BMW"] } 
+}).toArray().map(b => b._id);
+
+db.Cars.find({ carBrandId: { $in: brandIds } });

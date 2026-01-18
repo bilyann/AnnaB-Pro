@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "e1fa876e-bc3c-46ad-8346-24b2d2219b13",
+		"name": "Public SOAP APIs",
+		"description": "This is a collection of different SOAP APIs that are completley public and do not require any authentication, making it easier for consumers to play with and understand what APIs are all about by seeing the many different ways in which APIs can be used.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50417971",
+		"_collection_link": "https://anna2white-2394475.postman.co/workspace/Anna%2560s-Team's-Workspace~0183143c-18da-4c6f-8cb5-e465620d107d/collection/50417971-e1fa876e-bc3c-46ad-8346-24b2d2219b13?action=share&source=collection_link&creator=50417971"
+	},
+	"item": [
+		{
+			"name": "Book ISBN Numbers",
+			"item": [
+				{
+					"name": "Is Valid ISBN13 Number",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// 1. Перевірка статус-коду ",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"// 2. Перевірка статусу повідомлення",
+									"pm.test(\"Status text is OK\", function () {",
+									"    pm.response.to.have.status(\"OK\");",
+									"});",
+									"",
+									"// 3. Перевірка часу відповіді",
+									"pm.test(\"Response time is less than 2000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"// 4. Перевірка заголовка Content-Type (має бути XML)",
+									"pm.test(\"Content-Type is text/xml\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"text/xml\");",
+									"});",
+									"",
+									"// 5. Перевірка наявності заголовка Server",
+									"pm.test(\"Server header is present\", function () {",
+									"    pm.response.to.have.header(\"Server\");",
+									"});",
+									"",
+									"// 6. Перевірка, що тіло відповіді не порожнє",
+									"pm.test(\"Response body is not empty\", function () {",
+									"    pm.response.to.be.withBody;",
+									"    pm.expect(pm.response.text()).to.not.be.empty;",
+									"});",
+									"",
+									"// 7. Перевірка на наявність рядка 'true' у відповіді (проста перевірка тексту)",
+									"pm.test(\"Body contains 'true'\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"true\");",
+									"});",
+									"",
+									"// 8. Перевірка, що немає SOAP Fault (помилки сервера)",
+									"pm.test(\"No SOAP Fault in response\", function () {",
+									"    pm.expect(pm.response.text()).to.not.include(\"soap:Fault\");",
+									"});",
+									"",
+									"// 9. Парсинг XML та перевірка конкретного значення результату ",
+									"pm.test(\"IsValidISBN13Result is true\", function () {",
+									"    var jsonResponse = xml2Json(pm.response.text());",
+									"    var result = jsonResponse['soap:Envelope']['soap:Body']['m:IsValidISBN13Response']['m:IsValidISBN13Result'];",
+									"    pm.expect(result).to.eql(\"true\");",
+									"});",
+									"",
+									"// 10. Перевірка наявності правильного Namespace у відповіді",
+									"pm.test(\"Response contains correct Namespace\", function () {",
+									"    pm.expect(pm.response.text()).to.include('http://webservices.daehosting.com/ISBN');",
+									"});",
+									"// Негативний тест 1: Перевірка, що результат операції НЕ є \"false\"",
+									"// (Оскільки ми відправляємо валідний ISBN, отримання \"false\" було б помилкою)",
+									"pm.test(\"Result is NOT false\", function () {",
+									"    var jsonResponse = xml2Json(pm.response.text());",
+									"    var result = jsonResponse['soap:Envelope']['soap:Body']['m:IsValidISBN13Response']['m:IsValidISBN13Result'];",
+									"    pm.expect(result).to.not.eql(\"false\");",
+									"});",
+									"",
+									"// Негативний тест 2: Перевірка, що статус-код НЕ є помилковим (не 404, не 500 тощо)",
+									"pm.test(\"Status code is NOT an error (4xx or 5xx)\", function () {",
+									"    pm.expect(pm.response.code).to.not.be.oneOf([400, 404, 500, 503]);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <IsValidISBN13 xmlns=\"http://webservices.daehosting.com/ISBN\">\n      <sISBN>978-617-679-910-8</sISBN>\n    </IsValidISBN13>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"daehosting",
+								"com"
+							],
+							"path": [
+								"services",
+								"isbnservice.wso"
+							]
+						},
+						"description": "The test is done by calculation on the first 12 digits and compare the result with the checksum number at the end. You have to pass a 13 digits number."
+					},
+					"response": []
+				},
+				{
+					"name": "Is Valid ISBN10 Number",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// 1. Перевірка, що запит пройшов успішно (код 200)",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"// 2. Перевірка, що відповідь прийшла у форматі XML",
+									"pm.test(\"Response is XML\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\", \"text/xml; charset=utf-8\");",
+									"});",
+									"",
+									"// 3. Перевірка наявності заголовка Date ",
+									"pm.test(\"Date header exists\", function () {",
+									"    pm.response.to.have.header(\"Date\");",
+									"});",
+									"",
+									"// 4. Перевірка на відсутність заголовка помилки ",
+									"pm.test(\"Does not have Error header\", function () {",
+									"    pm.response.to.not.have.header(\"X-Error\");",
+									"});",
+									"",
+									"// 5. Перевірка структури: наявність тегу Body",
+									"pm.test(\"Response has SOAP Body\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"soap:Body\");",
+									"});",
+									"",
+									"// 6. Перевірка наявності тегу результату для ISBN10",
+									"pm.test(\"Contains IsValidISBN10Result tag\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"m:IsValidISBN10Result\");",
+									"});",
+									"",
+									"// 7. Конвертація XML в JSON та перевірка, що це валідний об'єкт",
+									"var jsonResponse = xml2Json(pm.response.text());",
+									"pm.test(\"XML is valid and parseable\", function () {",
+									"    pm.expect(jsonResponse).to.be.an('object');",
+									"});",
+									"",
+									"// 8. Логічна перевірка: Результат має бути \"true\"",
+									"pm.test(\"Check ISBN10 validity is true\", function () {",
+									"    var result = jsonResponse['soap:Envelope']['soap:Body']['m:IsValidISBN10Response']['m:IsValidISBN10Result'];",
+									"    pm.expect(result).to.eql(\"true\");",
+									"});",
+									"",
+									"// 9. Перевірка кодування (Encoding) в заголовку",
+									"pm.test(\"Content-Encoding is correct\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"utf-8\");",
+									"});",
+									"",
+									"// 10. Перевірка розміру відповіді",
+									"pm.test(\"Response size is reasonable\", function () {",
+									"    // Перевіряємо, що відповідь не надто мала (наприклад, не пуста помилка) і не гігантська",
+									"    pm.expect(pm.response.responseSize).to.be.above(100); ",
+									"});",
+									"// Негативний тест 1: Перевірка, що тіло відповіді НЕ містить слів \"Error\" або \"Exception\"",
+									"// (Це гарантує, що сервер не викинув необроблений виняток у тексті)",
+									"pm.test(\"Response body does NOT contain 'Error' or 'Exception'\", function () {",
+									"    pm.expect(pm.response.text()).to.not.match(/Error|Exception/);",
+									"});",
+									"",
+									"// Негативний тест 2: Перевірка, що ми НЕ отримали стандартну структуру помилки SOAP (Fault)",
+									"pm.test(\"Response is NOT a SOAP Fault\", function () {",
+									"    pm.expect(pm.response.text()).to.not.include(\"soap:Fault\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <IsValidISBN10 xmlns=\"http://webservices.daehosting.com/ISBN\">\n      <sISBN>0-19-852663-6</sISBN>\n    </IsValidISBN10>\n  </soap:Body>\n</soap:Envelope>"
+						},
+						"url": {
+							"raw": "http://webservices.daehosting.com/services/isbnservice.wso",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"daehosting",
+								"com"
+							],
+							"path": [
+								"services",
+								"isbnservice.wso"
+							]
+						},
+						"description": "The test is done by calculation on the first 9 digits and compare the result with the checksum number at the end. You have to pass a 10 digits number or 8 digits and an X."
+					},
+					"response": []
+				}
+			],
+			"description": "SOAP APIs for book ISBN numbers.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
