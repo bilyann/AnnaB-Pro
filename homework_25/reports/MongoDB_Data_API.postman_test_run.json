@@ -1,0 +1,527 @@
+{
+	"id": "94a5d5f0-627c-4411-8876-cf5836af96a9",
+	"name": "MongoDB Data API",
+	"timestamp": "2026-01-26T21:28:08.625Z",
+	"collection_id": "50417971-dcd472aa-c709-42ba-a4c4-09e1ccccfa7e",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 12,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-01-26T21:27:22.230Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "1ee5f30c-27a2-46f6-ba41-105e072d75c9",
+			"name": "Find Document",
+			"url": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+			"time": 139,
+			"responseCode": {
+				"code": 410,
+				"name": "Gone"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				139
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "908fea39-f6d1-4755-b9be-c34e95c1a084",
+			"name": "Find Document Projection",
+			"url": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+			"time": 39,
+			"responseCode": {
+				"code": 410,
+				"name": "Gone"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				39
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0fa61c8d-2c44-4b83-b108-3fa8415645c3",
+			"name": "Find Document test_collection",
+			"url": "https://eu-central-1.aws.data.mongodb-api.com/app/data-bniuj/endpoint/data/v1/action/findOne",
+			"time": 38,
+			"responseCode": {
+				"code": 410,
+				"name": "Gone"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				38
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "277f8c6a-8d24-49ac-a441-21ddb2e942ce",
+			"name": "Find Documents local",
+			"url": "http://localhost:3000/api/myemployee_production",
+			"time": 42,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус відповіді 200 OK": true,
+				"Результат: Колекція порожня, але сервер відповів успішно": true
+			},
+			"testPassFailCounts": {
+				"Статус відповіді 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Результат: Колекція порожня, але сервер відповів успішно": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				42
+			],
+			"allTests": [
+				{
+					"Статус відповіді 200 OK": true,
+					"Результат: Колекція порожня, але сервер відповів успішно": true
+				}
+			]
+		},
+		{
+			"id": "36f186ff-28c7-4a4c-aeb7-093338671581",
+			"name": "Find Documents local AirBnb",
+			"url": "http://localhost:3000/api/listingsAndReviews",
+			"time": 44560,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				44560
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "11c1788e-7fa2-4052-8229-18238a740005",
+			"name": "Find Documents local AirBnb by Query param",
+			"url": "http://localhost:3000/api/listingsAndReviews/search/query?_id=10009999",
+			"time": 52,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Тест 1: Response time is less than 2000ms": true,
+				"Тест 2: Валідація схеми (JSON Schema) пройшла успішно": true,
+				"Тест 3: Отримано очікуваний ID 10009999": true,
+				"Тест 4: Тип об'єкта — Apartment": true,
+				"Тест 5: У зручностях вказано Wifi": true,
+				"Тест 6: Адреса належить до Brazil (Бразилія)": true,
+				"Тест 7: Житло розраховане на 4 особи": true,
+				"Тест 8: Поле ціни містить валідне число": true,
+				"Тест 9: Ім'я господаря відповідає базі (Ynaie)": true,
+				"Тест 10: Посилання на зображення (picture_url) присутнє": true
+			},
+			"testPassFailCounts": {
+				"Тест 1: Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 2: Валідація схеми (JSON Schema) пройшла успішно": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 3: Отримано очікуваний ID 10009999": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 4: Тип об'єкта — Apartment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 5: У зручностях вказано Wifi": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 6: Адреса належить до Brazil (Бразилія)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 7: Житло розраховане на 4 особи": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 8: Поле ціни містить валідне число": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 9: Ім'я господаря відповідає базі (Ynaie)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест 10: Посилання на зображення (picture_url) присутнє": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				52
+			],
+			"allTests": [
+				{
+					"Тест 1: Response time is less than 2000ms": true,
+					"Тест 2: Валідація схеми (JSON Schema) пройшла успішно": true,
+					"Тест 3: Отримано очікуваний ID 10009999": true,
+					"Тест 4: Тип об'єкта — Apartment": true,
+					"Тест 5: У зручностях вказано Wifi": true,
+					"Тест 6: Адреса належить до Brazil (Бразилія)": true,
+					"Тест 7: Житло розраховане на 4 особи": true,
+					"Тест 8: Поле ціни містить валідне число": true,
+					"Тест 9: Ім'я господаря відповідає базі (Ynaie)": true,
+					"Тест 10: Посилання на зображення (picture_url) присутнє": true
+				}
+			]
+		},
+		{
+			"id": "0507ce86-4ff7-4d87-8803-a0180937ea20",
+			"name": "Find Documents local AirBnb by Query param Name",
+			"url": "http://localhost:3000/api/listingsAndReviews/search/query?name=Ribeira Charming Duplex",
+			"time": 87,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				87
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9ec328fb-32e5-4f85-98ea-3ab067933d03",
+			"name": "Find Documents local AirBnb by Query param Name Copy",
+			"url": "http://localhost:3000/api/listingsAndReviews/search/query?_id=10006546",
+			"time": 42,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				42
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b877ac0f-9e76-4474-949d-4c429592a9cf",
+			"name": "Update document",
+			"url": "http://localhost:3000/api/myemployee_test/6977d4f6279a87ff38814b62",
+			"time": 55,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				55
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4f6b35e6-9e7e-4d99-817c-f0aa9206090d",
+			"name": "Delete document",
+			"url": "http://localhost:3000/api/myemployee_test/6977d4f6279a87ff38814b62",
+			"time": 39,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				39
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "97124241-8358-408a-9cde-a769f3ca8225",
+			"name": "Find Documents by ID",
+			"url": "http://localhost:3000/api/myemployee_test",
+			"time": 85,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status complete": false
+			},
+			"testPassFailCounts": {
+				"Status complete": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				85
+			],
+			"allTests": [
+				{
+					"Status complete": false
+				}
+			]
+		},
+		{
+			"id": "a44c90a7-1999-4aeb-b4ed-5094a7ec1a6a",
+			"name": "Replace Document",
+			"url": "http://localhost:3000/api/myemployee_test/action/replaceOne",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "37ba5e2a-7d80-4c4f-a4a9-d3d028fda532",
+			"name": "Find Documents by ID",
+			"url": "http://localhost:3000/api/myemployee_test",
+			"time": 82,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				82
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a8c38209-3d18-4ccb-915a-9b40e5e86fac",
+			"name": "Delete Document",
+			"url": "http://localhost:3000/api/myemployee_test/action/deleteOne",
+			"time": 2,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bdd2f4b6-9021-47a0-9791-e937bae75a4f",
+			"name": "Run an Aggregation Pipeline",
+			"url": "http://localhost:3000/api/myemployee_test/action/aggregate",
+			"time": 1,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1b1763ef-9cdd-4459-ae4c-c6abefb93c09",
+			"name": "Insert Multiple Documents",
+			"url": "http://localhost:3000/api/myemployee_test",
+			"time": 80,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				80
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "912d28f1-e327-4cd8-9601-aeee68df045d",
+			"name": "Find Multiple Documents",
+			"url": "http://localhost:3000/api/myemployee_test/action/find",
+			"time": 1,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "547a8f21-e0e0-4363-aecf-930f2ff1f299",
+			"name": "Update Multiple Documents",
+			"url": "http://localhost:3000/api/myemployee_test/action/updateMany",
+			"time": 2,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bf37af07-982e-4b65-aba9-238984306384",
+			"name": "Delete Many Documents",
+			"url": "http://localhost:3000/api/myemployee_test/action/deleteMany",
+			"time": 2,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 45351,
+	"collection": {
+		"requests": [
+			{
+				"id": "1ee5f30c-27a2-46f6-ba41-105e072d75c9",
+				"method": "POST"
+			},
+			{
+				"id": "908fea39-f6d1-4755-b9be-c34e95c1a084",
+				"method": "POST"
+			},
+			{
+				"id": "0fa61c8d-2c44-4b83-b108-3fa8415645c3",
+				"method": "POST"
+			},
+			{
+				"id": "277f8c6a-8d24-49ac-a441-21ddb2e942ce",
+				"method": "GET"
+			},
+			{
+				"id": "36f186ff-28c7-4a4c-aeb7-093338671581",
+				"method": "GET"
+			},
+			{
+				"id": "11c1788e-7fa2-4052-8229-18238a740005",
+				"method": "GET"
+			},
+			{
+				"id": "0507ce86-4ff7-4d87-8803-a0180937ea20",
+				"method": "GET"
+			},
+			{
+				"id": "9ec328fb-32e5-4f85-98ea-3ab067933d03",
+				"method": "GET"
+			},
+			{
+				"id": "b877ac0f-9e76-4474-949d-4c429592a9cf",
+				"method": "PUT"
+			},
+			{
+				"id": "4f6b35e6-9e7e-4d99-817c-f0aa9206090d",
+				"method": "DELETE"
+			},
+			{
+				"id": "97124241-8358-408a-9cde-a769f3ca8225",
+				"method": "POST"
+			},
+			{
+				"id": "a44c90a7-1999-4aeb-b4ed-5094a7ec1a6a",
+				"method": "POST"
+			},
+			{
+				"id": "37ba5e2a-7d80-4c4f-a4a9-d3d028fda532",
+				"method": "POST"
+			},
+			{
+				"id": "a8c38209-3d18-4ccb-915a-9b40e5e86fac",
+				"method": "POST"
+			},
+			{
+				"id": "bdd2f4b6-9021-47a0-9791-e937bae75a4f",
+				"method": "POST"
+			},
+			{
+				"id": "1b1763ef-9cdd-4459-ae4c-c6abefb93c09",
+				"method": "POST"
+			},
+			{
+				"id": "912d28f1-e327-4cd8-9601-aeee68df045d",
+				"method": "POST"
+			},
+			{
+				"id": "547a8f21-e0e0-4363-aecf-930f2ff1f299",
+				"method": "POST"
+			},
+			{
+				"id": "bf37af07-982e-4b65-aba9-238984306384",
+				"method": "POST"
+			}
+		]
+	}
+}
